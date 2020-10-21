@@ -10,4 +10,6 @@
 
 - [云开发文档](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)
 
-# WeChatForCreator
+
+有问题联系个人QQ：505417246
+微信小程序云开发零基础QQ交流群：1073011570
