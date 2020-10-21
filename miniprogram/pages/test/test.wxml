@@ -1,0 +1,3 @@
+<!-- <input bindinput="search"></input> -->
+<button bindtap="button">支付</button>
+<button open-type="getUserInfo" bindgetuserinfo="getuserinfo">获取用户信息</button>

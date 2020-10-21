@@ -1,0 +1,83 @@
+<image src="{{array.img_src}}" class="banner"></image>
+<image src="./img/hongbao.png" class="hongbao"></image>
+<view class="text">
+  <text class="text_1">￥<text class="price_1">{{array.price}}</text> <text class="delete">￥7.58</text> </text>
+  <!-- <text class="text_2">折扣 7.4折</text> -->
+  <text class="text_3">{{array.detail}}</text>
+  <!-- <text class="text_4">16:24前可配送</text> -->
+  <!-- <text class="text_5">1.2kg-1.5kg/个,常温,平和</text> -->
+</view>
+<view class="body">
+  <view class="body_top">
+    <view class="body_top_left" bindtap="select" data-id="left" style="font-weight:bold">
+      <text>评论区</text>
+      <view class="line" ></view>
+    </view>
+    <!-- <view class="body_top_right" bindtap="select" data-id="right" style="font-weight:{{right_bold}}">
+      <text class="body_top_right">相似商品</text>
+      <view class="line" hidden="{{right}}"></view>
+    </view> -->
+  </view>
+  <view class="body_middle">
+  <view class="img_text">
+    <image src="./img/pinglun.png"></image>
+    <text>共{{array.pinglun.length}}条评论</text>
+  </view>
+  <view class="pinglun_middle">
+    <view class="neirong" wx:for="{{array.pinglun}}" wx:key="index">
+      <image src="{{item.userImg}}"></image>
+      <view class="texts">
+        <view class="name_time">
+          <text style="color:orange;font-size:30rpx" >{{item.userName}}</text>
+          <text style="color:gray;font-size:25rpx;margin-left:10rpx">{{item.time}}</text>
+        </view>
+        <text class="neirong_value">{{item.neirong}}</text>      
+      </view>
+    </view>
+  </view>
+  <view class="pinglun_bottom">
+    <view class="img_text">
+      <image src="./img/xie.png"></image>
+      <text>发布评论</text>
+    </view>
+    <!-- </view> -->
+    <textarea bindinput="pinglun_value" value="{{pinglun_value}}">
+    </textarea>
+    <button open-type="getUserInfo" bindgetuserinfo="getuserinfo">评论</button>
+  </view>
+    <!-- <view class="product">
+      <image src="./img/product_1.png" ></image>
+      <text>平和三红蜜柚0.85kg-1.2kg/个</text>
+      <view class="text_img">
+        <text>￥<text class="price_2">6.98</text></text>
+        <image src="./img/logo.png"></image>
+      </view>
+      <text class="delete">￥7.98</text>
+    </view>
+    <view class="product">
+      <image src="./img/product_1.png" ></image>
+      <text>平和三红蜜柚0.85kg-1.2kg/个</text>
+      <view class="text_img">
+        <text>￥<text class="price_2">6.98</text></text>
+        <image src="./img/logo.png"></image>
+      </view>
+      <text class="delete">￥7.98</text>
+    </view>
+    <view class="product">
+      <image src="./img/product_1.png" ></image>
+      <text>平和三红蜜柚0.85kg-1.2kg/个</text>
+      <view class="text_img">
+        <text>￥<text class="price_2">6.98</text></text>
+        <image src="./img/logo.png"></image>
+      </view>
+      <text class="delete">￥7.98</text>
+    </view>-->
+  </view> 
+</view>
+<view class="bottom">
+  <view class="bottom_left" bindtap="shoucang">
+    <image src="{{shoucang[0]}}"></image>
+    <text>收藏</text>
+  </view>
+  <view class="bottom_right" bindtap="addToShopping">加入购物车</view>
+</view>

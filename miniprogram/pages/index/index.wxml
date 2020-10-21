@@ -1,0 +1,99 @@
+<!-- <view class='nav' style='height:{{navH}}px'>
+首页
+</view> -->
+
+<!--搜索框 -->
+<view class="head">
+  <input placeholder="30分钟极速达" bindinput="value"></input>
+  <image src="../images/search.png" bindtap="search"></image>
+</view>
+<!-- 搜索结果 -->
+<view class="search" hidden="{{!searching}}">
+  <view class="search_product" wx:for="{{search_product}}" wx:key="index" data-id="{{item._id}}" bindtap="goToProduct">
+    <view class="left">
+      <image src="{{item.img_src}}"></image>
+      <text>{{item.name}}</text>
+    </view>
+    <text class="right">￥{{item.price}}</text>
+  </view>
+</view>
+<!-- 轮播图 -->
+<swiper indicator-active-color="green" indicator-dots="true" autoplay="true" interval="2000" indicator-color="white" style="height:{{height}}px;">
+  <swiper-item>
+    <image src="../images/banner.jpg" mode="widthFix" bindload="setContainerHeight" class="auto-img"></image>
+  </swiper-item>
+  <swiper-item>
+    <image src="../images/banner.jpg" mode="widthFix" bindload="setContainerHeight" class="auto-img"></image>
+  </swiper-item>
+  <swiper-item>
+    <image src="../images/banner.jpg" mode="widthFix" bindload="setContainerHeight" class="auto-img"></image>
+  </swiper-item>
+</swiper>
+<!-- 宫格分类入口 -->
+<view class="container">
+  <view class="body" wx:for="{{array}}" wx:key="index" data-name="{{item.name}}" bindtap="selectName">
+    <image src="{{item.img}}"></image>
+    <text>{{item.name}}</text>
+  </view>
+  <!-- <view class="body">
+    <image src="../images/home.png"></image>
+    <text>蔬菜</text>
+  </view>
+  <view class="body">
+    <image src="../images/home.png"></image>
+    <text>肉禽蛋品</text>
+  </view>
+  <view class="body">
+    <image src="../images/home.png"></image>
+    <text>海鲜水产</text>
+  </view>
+  <view class="body">
+    <image src="../images/home.png"></image>
+    <text>粮油调味</text>
+  </view>
+  <view class="body">
+    <image src="../images/home.png"></image>
+    <text>熟食卤味</text>
+  </view>
+  <view class="body">
+    <image src="../images/home.png"></image>
+    <text>冰品面点</text>
+  </view>
+  <view class="body">
+    <image src="../images/home.png"></image>
+    <text>牛奶面包</text>
+  </view>
+  <view class="body">
+    <image src="../images/home.png"></image>
+    <text>酒水冷饮</text>
+  </view>
+  <view class="body">
+    <image src="../images/home.png"></image>
+    <text>休闲零食</text>
+  </view> -->
+</view>
+
+<!-- 掌柜推荐 -->
+<view class="tuijian" bindtap="BossRecommend">
+  掌柜推荐  >
+</view>
+<view class="tuijian_1">
+  <view class="product" wx:for="{{array_tuijian}}" wx:key="index">
+    <image src="{{item.img_src}}" bindtap="goToProduct" data-id="{{item._id}}"></image>
+    <text class="name">{{item.name}}</text>
+    <text class="price">￥{{item.price}}</text>
+    <text class="add" bindtap="addToShop" data-id="{{item._id}}">+购物车</text>
+  </view>
+  <!-- <view class="product">
+    <image src="./img/tuijian_2.png"></image>
+    <text class="name">领先迷你豆沙</text>
+    <text class="price">￥3</text>
+    <text class="add">+购物车</text>
+  </view>
+  <view class="product">
+    <image src="./img/tuijian_3.png"></image>
+    <text class="name">鼎鼎油酥肉香</text>
+    <text class="price">￥36.8</text>
+    <text class="add">+购物车</text> -->
+  <!-- </view> -->
+</view>

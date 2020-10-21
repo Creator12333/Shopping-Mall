@@ -1,0 +1,74 @@
+page {
+  height: 100%;
+}
+.body {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+.left {
+  width: 25%;
+  height: 100%;
+  background-color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.right {
+  width: 75%;
+  height: 100%;
+  
+}
+.left > view {
+  text-align: center;
+  height: 10%;
+  font-size: 28rpx;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .left_name {
+
+} */
+.left_name_hover {
+  text-align: center;
+  height: 10%;
+  font-size: 28rpx;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: green;
+  border-left: 20rpx solid green;
+}
+.right > image {
+  width: 95%;
+  border-radius: 100rpx;
+  height: 300rpx;
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 30rpx;
+  display: flex;
+}
+.right_product {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-self: center;
+  align-items: center;
+}
+.product {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  margin-top: 20rpx;
+}
+.product > image {
+  width: 80rpx;
+  height: 80rpx;
+}

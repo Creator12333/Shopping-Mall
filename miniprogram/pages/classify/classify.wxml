@@ -1,0 +1,17 @@
+<view class="body">
+  <view class="left">
+    <view  wx:for="{{left_name}}" wx:key="index" bindtap="selectId" data-name="{{item.name}}"
+     class="{{name == item.name ? 'left_name_hover' : ''}}">
+      <view class="name">{{item.name}}</view>
+    </view>
+  </view>
+  <view class="right">
+    <image src="../images/banner.jpg" mode="widthFix"></image>
+    <view class="right_product">
+      <view class="product" wx:for="{{product}}" wx:key="index" bindtap="GoToProduct" data-id="{{item._id}}">
+        <image src="{{item.logo_src}}"></image>
+        <text>{{item.name}}</text>
+      </view>
+    </view>
+  </view>
+</view>

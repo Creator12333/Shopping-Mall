@@ -1,0 +1,109 @@
+page {
+  background-color: #f3f3f3;
+  height: 100%;
+}
+.bottom {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 100rpx;
+  background-color: white;
+}
+.bottom_left {
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* justify-content: space-between; */
+  width: 70%;
+  line-height: 100rpx;
+}
+/* .bottom_left > switch {
+  margin-left: 20rpx;
+} */
+.bottom_left > text {
+  text-align: center;
+  margin-left: 50rpx;
+  color: red;
+  font-size: 40rpx;
+}
+.bottom_right {
+  width: 30%;
+  text-align: center;
+  line-height: 100rpx;
+  color: white;
+  background-color: green;
+}
+.product {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 150rpx;
+  /* justify-content: center; */
+  align-items: center;
+  position: relative;
+  margin-bottom: 25rpx;
+}
+.middle {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40rpx;
+  margin-top: 20rpx;
+  font-size: 28rpx;
+}
+.middle > .text_top{
+  font-weight: bold;
+}
+.middle > .text_middle {
+  color: gray;
+  width: 220rpx;
+}
+.middle > .text_bottom {
+  color: red;
+}
+.product > .left {
+  margin-left: 50rpx;
+}
+.product > image {
+  width: 100rpx;
+  height: 100rpx;
+  padding-left: 40rpx;
+}
+.product > .right {
+  display: flex;
+  flex-direction: row;
+  border:1rpx solid black;
+  font-weight: bold;
+  width: 180rpx;
+  /* align-items: center;
+  justify-content: center; */
+  height:60rpx; 
+  line-height: 60rpx;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  right: 10rpx;
+}
+.product > .right > .right_left {
+  height: 60rpx ;
+  width: 60rpx;
+  border-right:1rpx solid black
+}
+.product > .right > .right_middle {
+  height: 60rpx;
+  width: 60rpx;
+  border-right: 1rpx solid black;
+}
+.product > .right > .right_right {
+  height: 60rpx;
+  width: 60rpx;
+  
+}
+.button {
+  width: 100rpx;
+  padding: 10rpx;
+  font-size: 20rpx;
+  margin: 0 auto;
+  border: 1rpx solid gray;
+  margin-top: 30rpx;
+}

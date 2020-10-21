@@ -1,0 +1,29 @@
+<view class="name">
+  <text class="name_left">收货人</text>
+  <view class="name_right">
+    <input placeholder="收货人姓名" bindinput="name" value="{{name}}"></input>
+    <view class="name_right_bottom">
+      <view class="{{selectSex===selectSex_arr[0] ? 'selectSex' : '' }}" bindtap="man">先生</view>
+      <view class="{{selectSex===selectSex_arr[1] ? 'selectSex' : ''}}" bindtap="woman">女士</view>
+    </view>
+  </view>
+</view>
+<view class="phone">
+  <text>手机号码</text>
+  <input placeholder="收货人手机号码" bindinput="phone" value="{{phone}}"></input>
+</view>
+<view class="address">
+  <text>收获地址</text>
+  <input placeholder="小区/写字楼/楼号/单元/门牌号" bindinput="address" value="{{address}}"></input>
+</view>
+<view class="address_leixing">
+  <text>地址类型</text>
+  <view class="address_leixing_right">
+    <view class="{{address_leixing == address_leixing_arr[0] ? 'select':''}}" data-name="家" bindtap="select">家</view>
+    <view class="{{address_leixing == address_leixing_arr[1] ? 'select':''}}" data-name="父母家" bindtap="select">父母家</view>
+    <view class="{{address_leixing == address_leixing_arr[2] ? 'select':''}}" data-name="朋友家" bindtap="select">朋友家</view>
+    <view class="{{address_leixing == address_leixing_arr[3] ? 'select':''}}" data-name="公司" bindtap="select">公司</view>
+    <view class="{{address_leixing == address_leixing_arr[4] ? 'select':''}}" data-name="学校" bindtap="select">学校</view>
+  </view>
+</view>
+<button type="primary" style="width:70%" bindtap="baocun">保存收货地址</button>

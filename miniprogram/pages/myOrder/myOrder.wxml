@@ -1,0 +1,26 @@
+<view class="top">
+  <view class="{{select == select_arr[0] ? 'select' : ''}}" bindtap="select" data-state="全部订单">全部订单</view>
+  <view class="{{select == select_arr[1] ? 'select' : ''}}"  bindtap="select" data-state="待收货">待收货</view>
+  <view class="{{select == select_arr[2] ? 'select' : ''}}"  bindtap="select" data-state="已完成">已完成</view>
+</view>
+<view class="body">
+  <view class="all_order" wx:for="{{array}}" wx:key="index">
+    <view class="text_1">
+      <text class="_1">{{item.state}}</text>
+      <text class="_2">{{item.time}}</text>
+    </view>
+    <view class="product" wx:for="{{item.product}}" wx:key="index">
+    <view class="product_left">
+      <image src="{{item.img_src}}"></image>
+      <text>{{item.name}}</text>
+    </view>
+      <text class="product_right">x{{item.num}}</text>
+    </view>
+    <view class="text">共{{item.product.length}}件,实付<text class="price">￥{{item.allMoney}}</text></view>
+    <view class="button">
+      <text class="{{item.state == '已完成' ? 'button_color':''}}" bindtap="ok" data-id="{{item._id}}" data-state="{{item.state}}">{{item.state == '待收货' ? '确认收货': '已完成'}}</text>
+    </view>
+  </view>
+  <view class="wait_order"></view>
+  <view class="finish_order"></view>
+</view>

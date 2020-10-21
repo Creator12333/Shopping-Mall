@@ -1,0 +1,136 @@
+page{
+  width: 100%;
+  height: 100%;
+  background-color: #f3f3f3;
+}
+.top{
+  width: 100%;
+  height: 200rpx;
+  text-align: center;
+  background-color: rgb(36, 148, 36);
+}
+.top view{
+  color: white;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+.top view:first-child{
+  font-size: small;
+}
+.top view:last-child{
+  font-size: 25rpx;
+}
+.top view view{
+  display: inline;
+  border: 1rpx solid white;
+  font-size: 30rpx;
+  padding: 2rpx 10rpx;
+  border-radius: 5%;
+}
+.top view:nth-child(2){
+  font-weight: bold;
+  margin: 20rpx auto;
+} 
+.buju{
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.bold{
+  font-weight: bold;
+  font-size: small;
+  margin-left: 30rpx;
+}
+.small{
+  font-size: 30rpx;
+  margin-right: 20rpx;
+  color: rgba(163, 165, 139, 0.76);
+}
+.fenge{
+  margin: 20rpx auto;
+  background-color:white;
+}
+.qian{
+  display: inline;
+  font-size: large;
+  color: orange;
+}
+.left{
+  font-size: small;
+  margin-left: 30rpx;
+}
+.right{
+  font-size: small;
+  margin-right: 20rpx;
+}
+.zhifu{
+  height: 100%;
+  width: 300rpx;
+  background-color: green;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+}
+.tishi{
+  padding: 5rpx 10rpx;
+  width: fit-content;
+  font-size: small;
+  margin-left: 20rpx;
+  color:rgba(163, 165, 139, 0.76);
+  background-color: #f3f3f3;
+  border-radius: 5%;
+  margin-top: 20rpx;
+}
+input{
+  margin: auto;
+  text-align: center;
+  width: 90%;
+  border-radius: 10rpx;
+  background-color:white;
+  border: 1rpx solid rgba(163, 165, 139, 0.76);
+}
+.show{
+  height: 150rpx;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  /* line-height: 300rpx; */
+  /* margin: auto; */
+  align-items: center;
+}
+.tu{
+  display: flex;
+  height: 100%;
+  /* align-content: space-around; */
+  align-items: center;
+  justify-content: center;
+  margin-left: 30rpx;
+}
+.tu > image {
+  width: 60rpx;
+  height: 60rpx;
+  padding: 20rpx;
+}
+.tutext{
+  margin-left: 30rpx;
+  display: flex;
+  /* height: 100%; */
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  align-content: space-around;
+  align-items: center;
+  justify-content: center;
+}
+.tutext:nth-child(1){
+  margin-bottom: 40rpx;
+}
+/* .tutext:nth-child() */
+.bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

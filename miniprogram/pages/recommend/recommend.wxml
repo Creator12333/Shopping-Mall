@@ -1,0 +1,13 @@
+<image src="../images/banner.jpg" class="top" mode="widthFix"></image>
+<view class="body">
+  <view class="product" wx:for="{{product}}">
+    <image src="{{item.img_src}}"></image>
+    <view class="middleText">
+      <text class="text_1">{{item.name}}</text>
+      <text class="text_2">{{item.detail}}</text>
+      <!-- <text class="text_3">8.8折</text> -->
+      <text class="text_4">￥{{item.price}}</text>
+    </view>
+    <view class="right" bindtap="addToShopping" data-id="{{item._id}}">+</view>
+  </view>
+</view>

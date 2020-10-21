@@ -1,0 +1,10 @@
+<view class="body">
+  <view class="product" wx:for="{{array}}" wx:key="index" bindtap="goToProduct" data-id="{{item.id}}">
+    <image src="{{item.img_src}}"></image>
+    <view class="product_middle">
+      <text class="name">{{item.name}}</text>
+      <text class="detail">{{item.detail}}</text>
+      <text class="price">￥{{item.price}}</text>
+    </view>
+  </view>
+</view>

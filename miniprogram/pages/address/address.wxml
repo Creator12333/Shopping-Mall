@@ -1,0 +1,18 @@
+<view class="body">
+  <view class="address" wx:for="{{array}}" wx:key="index" bindtap="selectAddress" data-id="{{item._id}}">
+      <view class="left">
+        <view class="left_top">
+          <text class="left_top_l">{{item.address}}</text>
+          <text class="left_top_r">{{item.selectSex}}</text>
+        </view>
+        <view class="left_bottom">
+          <text class="left_bottom_l">{{item.name}}</text>
+          <text class="left_bottom_r">{{item.phoneNum}}</text>
+        </view>
+      </view>
+      <image src="./xiugai.png" bindtap="changeAddress" data-id="{{item._id}}"></image>
+  </view>
+</view>
+<view class="button">
+  <button class="bottom" style="width:80%" bindtap="address">添加收货地址</button>
+</view>

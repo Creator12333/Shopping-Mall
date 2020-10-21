@@ -1,0 +1,128 @@
+page {
+  background-color: #f3f3f3;
+}
+.head {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: green;
+}
+.head  > image {
+  width: 60rpx;
+  height: 60rpx;
+  margin: 20rpx 0;
+}
+.head > input {
+  width: 80%;
+  border: 2rpx solid black;
+  padding: 10rpx;
+  text-align: center;
+  background-color: white;
+  margin: 20rpx 0;
+}
+swiper {
+  width: 100%;
+  /* overflow: hidden; */
+}
+.auto-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: white;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  padding-bottom: 10rpx;
+}
+.body > text {
+  text-align: center;
+  font-size: 24rpx;
+}
+.body > image { 
+  width: 80rpx;
+  height: 80rpx;
+  margin: 0 auto;
+}
+.tuijian {
+  width: 100%;
+  padding: 30rpx 0;
+  margin-top: 20rpx;
+  background-color: white;
+  color: #CA954E;
+  text-align: center;
+}
+.tuijian_1 {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  background-color: white;
+  margin-top: 5rpx;
+}
+.product {
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  align-items: center;
+}
+.product > image {
+  width: 120rpx;
+  height: 120rpx;
+  margin:0 auto;
+}
+.name {
+  margin-top: 10rpx;
+}
+.price {
+  margin-top: 10rpx;
+  color: rgb(225, 150, 31);
+}
+.add {
+  border-radius: 30rpx;
+  padding: 5rpx;
+  border: 1rpx solid black;
+  background-color: green;
+  color: white;
+  width: 180rpx;
+  margin-top: 10rpx;
+}
+.search {
+  background-color: #f3f3f3;
+  width: 100%;
+  position: fixed;
+  top: 109rpx;
+  z-index: 2;
+  height: auto;
+}
+.search_product{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #fff;
+  margin-bottom: 10rpx;
+  padding: 10rpx 0;
+  align-items: center;
+}
+.search_product > .left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.search_product > .left > image{
+  width: 70rpx;
+  height: 70rpx;
+  padding: 10rpx 20rpx;
+}
+.search_product > .right {
+  margin-right: 20rpx;
+}

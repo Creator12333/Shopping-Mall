@@ -1,0 +1,123 @@
+page {
+  background-color: #f3f3f3;
+}
+.head {
+  height: 250rpx;
+  background-color: #008000;
+}
+.user {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  font-size: 40rpx;
+  padding-top: 80rpx;
+}
+.img {
+  width: 100rpx;
+  height: 100rpx;
+  margin-left: 50rpx;
+  /* border: 1rpx solid black; */
+  border-radius: 50%;
+  overflow: hidden;
+}
+.name{
+  margin-left: 20rpx;
+}
+.classify {
+  width: 88%;
+  background-color: white;
+  /* height: 150rpx; */
+  /* z-index: 2; */
+  margin: 0 auto;
+  margin-top: 40rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20rpx;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  justify-content: center;
+  align-items: center;
+}
+.body > image {
+  width: 88rpx;
+  height: 88rpx;
+  margin-top: 20rpx;
+}
+.body > text {
+  text-align: center;
+  font-size: 28rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  font-weight: bold;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 180rpx;
+  background-color: white;
+  padding: 40rpx 0;
+  border-radius: 20rpx;
+}
+.text_left {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: bold;
+}
+.text_right {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: bold;
+}
+.text_left_top {
+  font-size: 40rpx;
+  margin-bottom: 10rpx;
+}
+.poster {
+  width: 88%;
+  height: 250rpx;
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 180rpx;
+  display: flex;
+  border-radius: 20rpx;
+}
+.menu {
+  width: 84%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 20rpx;
+  margin-bottom: 200rpx;
+  border-radius: 20rpx;
+  padding: 20rpx;
+}
+.menu_body {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30rpx;
+}
+.menu_body > image {
+  width: 70rpx;
+  height: 70rpx;
+}
+.menu_body > text {
+  display: flex;
+  margin-top: 20rpx;
+  font-size: 28rpx;
+}

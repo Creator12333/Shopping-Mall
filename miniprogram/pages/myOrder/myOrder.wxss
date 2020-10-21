@@ -1,0 +1,97 @@
+page {
+  height: 100%;
+  width: 100%;
+  background-color: #f3f3f3;
+}
+.top {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 5rpx;
+}
+.top > view {
+  text-align: center;
+  width: 33%;
+  padding: 20rpx 30rpx;
+  font-size: 28rpx;
+}
+.select {
+  color: green;
+  border-bottom: 4rpx solid green;
+}
+.all_order {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #fff;
+}
+.all_order > .text_1 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 20rpx 0;
+  align-items: center;
+}
+.all_order > .text_1 > ._1 {
+  color: rgb(225, 150, 31);
+  font-size: 30rpx;
+  margin-left: 30rpx;
+  font-weight: bold;
+}
+.all_order > .text_1 > ._2{
+  color: gray;
+  font-size: 20rpx;
+  margin-left: 20rpx;
+}
+.all_order > .product {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.all_order > .product > .product_left {
+  display: flex;
+  align-items: center;
+}
+.all_order > .product > .product_left > image {
+  width: 60rpx;
+  height: 60rpx;
+  padding: 20rpx 20rpx 20rpx 35rpx;
+}
+.all_order > .product > .product_left > text {
+  margin-left: 20rpx;
+}
+.all_order > .product > .product_right {
+  margin-right: 25rpx;
+}
+.all_order > .text {
+  text-align: right;
+  margin-right: 25rpx;
+  margin-bottom: 20rpx;
+  font-size: 24rpx;
+}
+.all_order > .text > text {
+  color: #f00;
+  font-size: 38rpx;
+}
+.all_order > .button {
+  width: 100%;
+  height: 70rpx;
+  text-align: right;
+}
+.all_order > .button > text {
+  border: 1rpx solid red;
+  color: red;
+  padding: 10rpx 30rpx;
+  font-size: 26rpx;
+  /* width: auto;   */
+  margin-right: 25rpx;
+  margin-top: 20rpx;
+
+}
+.all_order > .button > .button_color {
+  color: green;
+  border: 1rpx solid green;
+}
+

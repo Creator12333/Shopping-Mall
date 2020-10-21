@@ -1,0 +1,70 @@
+<view>
+  <view class="top">
+    <view>
+      订单配送至
+      <view>{{array.address_leixing}}</view>
+    </view>
+    <view>{{array.address}}</view>
+    <view>{{array.name}} {{array.phoneNum}}</view>
+  </view>
+  <!-- <view class="buju">
+    <view class="bold">送达时间</view>
+    <view class="small">预计送达时间</view>
+  </view> -->
+  <!-- <view class="fenge">
+    <view class="buju">
+      <view class="bold">优惠卷</view>
+      <view class="small">暂无</view>
+    </view>
+    <view class="buju">
+      <view class="bold">补分</view>
+      <view class="small">满200可用</view>
+    </view>
+  </view>
+  <view class="fenge">
+    <view>
+      <view class="buju">
+        <view class="bold">备注</view>
+        <view class="small">0/100字</view>
+      </view>
+      <input type="text" placeholder="请输入备注信息"/>
+      <view class="tishi">预约订单，请准时送达，不早不退</view>
+      <view class="tishi">电话联系不上时，请直接帮我把商品放至自提点</view>
+      <view class="tishi">快到的时候，请提前电话联系我</view>
+    </view>
+  </view> -->
+  <view class="fenge">
+    <view class="buju">
+      <view class="bold">商品</view>
+      <view class="bold right">{{product.length}}件</view>
+    </view>
+    <view class="show" wx:for="{{product}}" wx:key="index">
+      <view class="tu">
+        <image src="{{item.img_src}}"></image>
+        <view class="tutext">
+          <view>{{item.name}}</view>
+          <view>￥{{item.price}}</view>
+        </view>
+      </view>
+      <view>x{{item.num}}</view>
+    </view>
+  </view>
+  <!-- <view class="buju">
+    <view class="left">总价</view>
+    <view class="right">￥{{allMoney}}</view>
+  </view>
+  <view class="buju">
+    <view class="left">配送费</view>
+    <view class="right">￥0</view>
+  </view> -->
+  <view class="buju">
+    <view class="bold">合计</view>
+    <view class="right">￥{{allMoney}}</view>
+  </view>
+  <view class="buju bold bottom">
+    <view>合计
+      <view class="qian">￥{{allMoney}}</view>
+    </view>
+    <view  class="zhifu" bindtap="pay">去支付</view>
+  </view>
+</view>

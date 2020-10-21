@@ -1,0 +1,89 @@
+.name {
+  display: flex;
+  flex-direction: row;
+}
+.name_left {
+  width: 20%;
+  margin-left: 30rpx;
+  margin-top: 30rpx;
+}
+.name_right_bottom {
+  display: flex;
+  flex-direction: row;
+}
+.name_right {
+  margin-left: 20rpx;
+}
+.name_right > input {
+  margin-left: 50rpx;
+  margin-bottom: 40rpx;
+  margin-top: 30rpx;
+}
+.name_right_bottom > view {
+  border: 1rpx solid gray;
+  padding: 10rpx 30rpx;
+  margin-left: 30rpx;
+  font-size: 28rpx;
+  /* color: gray; */
+}
+.phone {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40rpx;
+}
+.phone > text {
+  margin-left: 30rpx;
+  width: 20%;
+}
+.phone > input {
+  width: 60%;
+  margin-left: 60rpx;
+}
+.address {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40rpx;
+}
+.address > text {
+  margin-left: 30rpx;
+  width: 20%;
+}
+.address > input {
+  width: 60%;
+  margin-left: 60rpx;
+}
+.address_leixing {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40rpx;
+}
+.address_leixing > text {
+  margin-left: 30rpx;
+  width: 25%;
+}
+.address_leixing > .address_leixing_right {
+  /* width: 60%; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* margin-left: 60rpx; */
+  padding-left: 60rpx;
+}
+.address_leixing > .address_leixing_right > view {
+  border: 1rpx solid gray;
+  /* color: gray; */
+  padding: 10rpx 30rpx;
+  font-size: 22rpx;
+  margin-left: 20rpx;
+  width: 70rpx;
+  text-align: center;
+  margin-bottom: 20rpx;
+}
+button {
+  margin-top: 40rpx;
+  border-radius: 40rpx;
+}
+.selectSex , .select {
+  background-color: green;
+  color: white;
+}

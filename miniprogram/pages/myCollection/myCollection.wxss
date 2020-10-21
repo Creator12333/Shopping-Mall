@@ -1,0 +1,40 @@
+page {
+  height: 100%;
+  width: 100%;
+  background-color: #f3f3f3;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.product {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+}
+.product > image {
+  width: 150rpx;
+  height: 150rpx;
+  margin: 30rpx;
+}
+.product > .product_middle {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+}
+.product > .product_middle > .name {
+  font-size: 40rpx;
+  margin-bottom: 10rpx;
+}
+.product > .product_middle > .detail {
+  font-size: 24rpx;
+  margin-bottom: 40rpx;
+  color: gray;
+}
+.product > .product_middle > .price {
+  color: #f00;
+  margin-bottom: 30rpx;
+}
