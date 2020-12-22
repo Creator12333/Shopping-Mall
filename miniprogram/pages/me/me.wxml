@@ -38,21 +38,21 @@
     <image src="./img/yaoqingyouli.png"></image>
     <text>邀请有礼</text>
   </view> -->
-  <view class="menu_body">
-    <image src="./img/shouhuodizhi.png"></image>
-    <text>收货地址</text>
-  </view>
-  <view class="menu_body">
-    <image src="./img/lianxikefu.png"></image>
-    <text>联系客服</text>
-  </view>
-  <view class="menu_body">
-    <image src="./img/bangzhuyufankui.png"></image>
-    <text>帮助与反馈</text>
-  </view>
   <view class="menu_body" bindtap="goToCollection">
     <image src="./img/shoucang.png"></image>
     <text>我的收藏</text>
+  </view>
+  <view class="menu_body" bindtap="admin">
+    <image src="./img/houtaiguanli.png"></image>
+    <text>后台管理</text>
+  </view>
+  <view class="menu_body">
+    <image src="./img/shoucang.png"></image>
+    <text>测试</text>
+  </view>
+  <view class="menu_body">
+    <image src="./img/shoucang.png"></image>
+    <text>测试</text>
   </view>
   <!-- <view class="menu_body">
     <image src="./img/zhaomu.png"></image>

@@ -1,0 +1,10 @@
+<view class="content">
+  <view class="body" bindtap="addProduct">
+  <image src="../images/product_add.png"></image>
+  <text>增加商品</text>
+  </view>
+  <view class="body" bindtap="manageProduct">
+    <image src="../images/product_manage.png"></image>
+    <text>管理商品</text>
+  </view>
+</view>

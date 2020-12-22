@@ -53,7 +53,7 @@ page {
   margin-top: 30rpx;
   display: flex;
 }
-.right_product {
+/* .right_product {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -71,4 +71,39 @@ page {
 .product > image {
   width: 80rpx;
   height: 80rpx;
+} */
+.product {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  padding-left: 20rpx;
+}
+.product > image {
+  width: 100rpx;
+  height: 100rpx;
+}
+.product > .text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rpx;
+}
+.product > .text :nth-child(1){
+  margin: 20rpx 0;
+  font-weight: bold;
+}
+.product > .text :nth-last-child(2){
+  color: gray;
+  font-size: 26rpx;
+}
+.product > .text :nth-child(3){
+  color: red;
+  margin-top: 20rpx;
+}
+.product > text {
+  position: absolute;
+  right: 40rpx;
+  bottom: 10rpx;
+  font-size: 26rpx;
 }

@@ -1,0 +1,34 @@
+page {
+  background-color: #f3f3f3;
+}
+.content {
+  background-color: #fff;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20rpx;
+}
+.body {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+  align-items: center;
+
+}
+.body > text {
+  width: 30%;
+  padding: 10rpx 20rpx;
+  margin-left: 42rpx;
+}
+.body > input,radio-group {
+  width: 70%;
+  margin-right: 30rpx;
+}
+.image {
+  display: flex;
+  margin-top: 20rpx;
+  flex-direction: column;
+}
+.image > text {
+  margin-left: 62rpx;
+  margin-bottom: 30rpx;
+}

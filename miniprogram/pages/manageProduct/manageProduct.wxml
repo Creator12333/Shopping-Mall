@@ -1,0 +1,12 @@
+<view class="product" wx:for="{{product}}" wx:key="index">
+  <image src="{{item.img_src}}"></image>
+  <view class="text">
+    <text>{{item.name}}</text>
+    <text>{{item.detail}}</text>
+    <text>￥{{item.price}}</text>
+  </view>
+  <view class="button">
+    <button data-id="{{item._id}}" data-fileID="{{item.img_src}}" bindtap="delete"  size="mini" style="background-color:#f00;">删除</button>
+    <button data-id="{{item._id}}" data-fileID="{{item.img_src}}" bindtap="update"  size="mini" style="background-color:#0f0;">修改</button>
+  </view>
+</view>

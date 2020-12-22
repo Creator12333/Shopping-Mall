@@ -1,0 +1,24 @@
+page {
+  background-color: #f3f3f3;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 20rpx;
+}
+.content > .body {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  background-color: #fff;
+  padding: 30rpx;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40rpx;
+}
+.content > .body > image {
+  width: 100rpx;
+  height: 100rpx;
+  margin-bottom: 20rpx;
+}

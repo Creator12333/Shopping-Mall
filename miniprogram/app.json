@@ -13,13 +13,16 @@
     "pages/address_detail/address_detail",
     "pages/myCollection/myCollection",
     "pages/shop_order/shop_order",
-    "pages/myOrder/myOrder"
+    "pages/myOrder/myOrder",
+    "pages/admin/admin",
+    "pages/addProduct/addProduct",
+    "pages/manageProduct/manageProduct"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#008000",
-    "navigationBarTitleText": "刘磊磊超市",
+    "navigationBarTitleText": "Ray超市",
     "navigationBarTextStyle": "white"
   },
   "tabBar": {

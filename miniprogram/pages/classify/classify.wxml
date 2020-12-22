@@ -7,11 +7,20 @@
   </view>
   <view class="right">
     <image src="../images/banner.jpg" mode="widthFix"></image>
-    <view class="right_product">
+    <!-- <view class="right_product">
       <view class="product" wx:for="{{product}}" wx:key="index" bindtap="GoToProduct" data-id="{{item._id}}">
         <image src="{{item.logo_src}}"></image>
         <text>{{item.name}}</text>
       </view>
+    </view> -->
+    <view class="product" wx:for="{{product}}" wx:key="index" bindtap="GoToProduct" data-id="{{item._id}}">
+      <image src="{{item.img_src}}"></image>
+      <view class="text">
+        <text>{{item.name}}</text>
+        <text>{{item.detail}}</text>
+        <text>￥{{item.price}}</text>
+      </view>
+      <!-- <text>销量：999</text> -->
     </view>
   </view>
 </view>

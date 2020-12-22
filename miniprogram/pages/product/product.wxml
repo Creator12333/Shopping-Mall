@@ -1,12 +1,17 @@
+<!-- 商品图片 -->
 <image src="{{array.img_src}}" class="banner"></image>
-<image src="./img/hongbao.png" class="hongbao"></image>
 <view class="text">
-  <text class="text_1">￥<text class="price_1">{{array.price}}</text> <text class="delete">￥7.58</text> </text>
-  <!-- <text class="text_2">折扣 7.4折</text> -->
-  <text class="text_3">{{array.detail}}</text>
-  <!-- <text class="text_4">16:24前可配送</text> -->
-  <!-- <text class="text_5">1.2kg-1.5kg/个,常温,平和</text> -->
+  <!-- 商品价格 -->
+  <text style="margin:10rpx 0 20rpx 0;font-weight:bold;color:#f00;font-size:40rpx">￥{{array.price}}</text>
+  <!-- 商品描述 -->
+  <text style="margin: 0 0 20rpx 0;font-size:32rpx;color:gray">{{array.detail}}</text>
+  <!-- 商品库存和销量 -->
+  <!-- <view class="text_bottom">
+    <text style="font-size:26rpx">库存:{{array.kucun}}</text>
+    <text style="margin-right:30rpx">销量:999</text>
+  </view> -->
 </view>
+
 <view class="body">
   <view class="body_top">
     <view class="body_top_left" bindtap="select" data-id="left" style="font-weight:bold">

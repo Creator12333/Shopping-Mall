@@ -1,0 +1,39 @@
+.product {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  padding-left: 20rpx;
+}
+.product > image {
+  width: 100rpx;
+  height: 100rpx;
+}
+.product > .text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rpx;
+  width: 50%;
+}
+.product > .text :nth-child(1){
+  margin: 20rpx 0;
+  font-weight: bold;
+}
+.product > .text :nth-last-child(2){
+  color: gray;
+  font-size: 26rpx;
+}
+.product > .text :nth-child(3){
+  color: red;
+  margin-top: 20rpx;
+}
+.product > .button {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rpx;
+}
+.product > .button > button {
+  margin-top: 20rpx;
+  color:#fff
+}

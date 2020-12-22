@@ -1,0 +1,36 @@
+<view class="content">
+  <view class="body">
+  <text>商品名称:</text>
+  <input bindinput="getName" value="{{name}}"/>
+</view>
+<view class="body">
+  <text>商品分类:</text>
+  <radio-group bindchange="getClassify">
+    <radio wx:for="{{classifyObject}}" value="{{item.name}}" checked="{{item.checked}}">{{item.name}}</radio>
+  </radio-group>
+</view>
+<view class="body">
+  <text>商品价格:</text>
+  <input bindinput="getPrice" value="{{price}}" />
+</view>
+<view class="body">
+  <text>商品描述:</text>
+  <input bindinput="getDetail" value="{{detail}}"/>
+</view>
+<!-- <view class="body">
+  <text>商品库存:</text>
+  <input bindinput="getStock"/>
+</view> -->
+<view class="body">
+  <text>是否推荐:</text>
+  <radio-group bindchange="isRecommend">
+    <radio wx:for="{{recommendObject}}" value="{{item.name}}" checked="{{item.checked}}">{{item.name}}</radio>
+  </radio-group>
+</view>
+<view class="image">
+  <text>商品图片:</text>
+  <button type="primary" style="width:50%" bindtap="getPicture" wx:if="{{fileID == ''}}">添加图片</button>
+  <image src="{{fileID}}" wx:if="{{fileID !== ''}}" mode="widthFix" style="width:200rpx;height:200rpx;margin:0 auto"></image>
+</view>
+<button style="margin-top:30rpx;background-color:#00f;color:#fff;width:70%;margin-bottom:30rpx" bindtap="submit">提交</button>
+</view>
