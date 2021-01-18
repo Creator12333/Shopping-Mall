@@ -8,7 +8,6 @@ Page({
     product:[],
     openid:''
   },
-
   // 加入购物车
   addToShopping(res){
     var that = this;
@@ -62,9 +61,9 @@ Page({
    */
   onLoad: function (options) {
     var that = this;
-    var fenlei = ['水果','蔬菜','肉禽蛋品','海鲜水产','粮油调味','熟食卤味','冰品面点','牛奶面包','酒水冷饮','休闲零食'];
+    // var fenlei = ['水果','蔬菜','肉禽蛋品','海鲜水产','粮油调味','熟食卤味','冰品面点','牛奶面包','酒水冷饮','休闲零食'];
     var array = [];
-    var x = 0,i = 0;
+    // var x = 0,i = 0;
     // console.log(x,i);
     wx.showLoading({
       title: '加载中',
@@ -72,22 +71,18 @@ Page({
     wx.cloud.callFunction({
       name:'findProduct',
       success(res){
-        wx.hideLoading({
-          success: (res) => {},
-        })
-        while(i <= res.result.data.length - 1){
-          if(res.result.data[i].fenlei == fenlei[x]){
-            array.push(res.result.data[i]);
-            i = i + 2;
-            x ++;
+        for(var i = 0; i < res.result.data.length; i++){
+          if(res.result.data[i].isRecommend == '是'){
+            array.push(res.result.data[i])
           }
         }
-        console.log(array);
         that.setData({
           product:array
         })
+        wx.hideLoading({
+          success: (res) => {},
+        })
       }
-
     })
     wx.cloud.callFunction({
       name:'OpenId',

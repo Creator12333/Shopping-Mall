@@ -104,8 +104,9 @@ Page({
     }
     console.log("product",product);
     for(var x = 0; x < product.length; x++){
-      allMoney += product[x].price
+      allMoney += parseInt(product[x].price) * product[x].num;
     }
+    console.log(allMoney);
     that.setData({
       array:array,
       product:product,
