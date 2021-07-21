@@ -43,6 +43,7 @@ page {
   align-items: center;
   position: relative;
   margin-bottom: 25rpx;
+  margin-top:30rpx;
 }
 .middle {
   display: flex;

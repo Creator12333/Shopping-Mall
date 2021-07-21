@@ -121,3 +121,24 @@ page {
   margin-top: 20rpx;
   font-size: 28rpx;
 }
+
+.Modal {
+  position: fixed;
+  z-index: 999;
+  width: 500rpx;
+  height: 300rpx;
+  /* 背景框颜色 */
+  background-color: lightgreen;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  padding: 100rpx 20rpx 0 20rpx;
+  border-radius: 30rpx;
+}
+.Modal text {
+}
+.Modal input {
+  margin-top: 50rpx;
+  border: 1rpx solid black;
+}

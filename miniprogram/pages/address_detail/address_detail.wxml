@@ -26,4 +26,4 @@
     <view class="{{address_leixing == address_leixing_arr[4] ? 'select':''}}" data-name="学校" bindtap="select">学校</view>
   </view>
 </view>
-<button type="primary" style="width:70%" bindtap="baocun">保存收货地址</button>
+<button type="primary" style="width:70%" bindtap="baocun" style="background-color:#000;color:#fff">保存收货地址</button>

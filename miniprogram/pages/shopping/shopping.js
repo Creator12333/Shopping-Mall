@@ -130,8 +130,9 @@ Page({
         Money += array[i].price * array[i].num;
       }
     }
+
     that.setData({
-      Money:Money
+      Money:Money.toFixed(1)
     })
     console.log(that.data.Money);
   },

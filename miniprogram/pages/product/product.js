@@ -35,47 +35,42 @@ Page({
     var neirong = that.data.pinglun_value;
     var pinglun = that.data.array.pinglun;
     console.log(pinglun);
-    wx.getSetting({
-      success(res){
-        if(res.authSetting['scope.userInfo']){
-          wx.getUserInfo({
-            success(res){
-              userName = res.userInfo.nickName;
-              userImg = res.userInfo.avatarUrl;
-              var array = {
-                neirong:neirong,time:time,userName:userName,userImg:userImg
-              }
-              pinglun.push(array);
-              console.log(pinglun)
-              wx.cloud.callFunction({
-                name:'upDatePingLun',
-                data:{
-                  id:id,
-                  pinglun:pinglun
-                },
-                success(res){
-                  console.log("评论上传成功");
-                  wx.cloud.callFunction({
-                    name:'selectProduct',
-                    data:{
-                      id:id
-                    },
-                    success(res){
-                      console.log("最新内容为:",res.result.data);
-                      that.setData({
-                        array:res.result.data[0],
-                        pinglun_value:null
-                      })
-                    }
-                  })
-                },
-                fail(res){
-                  console.log("评论上传失败",res);
-                }
-              })
-            }
-          })
+    wx.getUserProfile({
+      desc:'获取用户信息',
+      success(res) {
+        userName = res.userInfo.nickName;
+        userImg = res.userInfo.avatarUrl;
+        var array = {
+          neirong:neirong,time:time,userName:userName,userImg:userImg
         }
+        pinglun.push(array);
+        console.log(pinglun)
+        wx.cloud.callFunction({
+          name:'upDatePingLun',
+          data:{
+            id:id,
+            pinglun:pinglun
+          },
+          success(res){
+            console.log("评论上传成功");
+            wx.cloud.callFunction({
+              name:'selectProduct',
+              data:{
+                id:id
+              },
+              success(res){
+                console.log("最新内容为:",res.result.data);
+                that.setData({
+                  array:res.result.data[0],
+                  pinglun_value:null
+                })
+              }
+            })
+          },
+          fail(res){
+            console.log("评论上传失败",res);
+          }
+        })
       }
     })
   },

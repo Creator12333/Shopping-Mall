@@ -59,3 +59,7 @@
     <text>磊磊招聘</text>
   </view> -->
 </view>
+<view class="Modal" wx:if="{{show}}">
+  <text>请输入密码</text>
+  <input type="text" bindinput="adminPwd" />
+</view>

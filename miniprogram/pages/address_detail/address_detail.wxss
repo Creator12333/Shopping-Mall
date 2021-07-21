@@ -82,6 +82,8 @@
 button {
   margin-top: 40rpx;
   border-radius: 40rpx;
+  background-color: #000;
+  color: #fff;
 }
 .selectSex , .select {
   background-color: green;

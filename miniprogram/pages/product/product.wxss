@@ -47,8 +47,6 @@ page {
   border-radius: 20rpx;
 }
 .body_middle {
-  /* display: flex;
-  flex-direction: row; */
   width: 100%;
   margin-bottom: 120rpx;
 }
@@ -151,6 +149,7 @@ page {
   height: 100rpx;
   position: fixed;
   bottom: 0;
+  z-index: 1000;
 }
 .bottom_left {
   display: flex;

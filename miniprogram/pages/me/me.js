@@ -4,13 +4,28 @@ Page({
    * 页面的初始数据
    */
   data: {
-    
+    show:false
   },
-
+  adminPwd(e) {
+    var that = this;
+    if(e.detail.value == '123456') {
+      wx.showToast({
+        title: '密码正确',
+        success(res) {
+          wx.navigateTo({
+            url: '../admin/admin',
+          })
+          that.setData({
+            show:!that.data.show
+          })
+        }
+      })
+    }
+  },
   // 跳转到后台管理
   admin(){
-    wx.navigateTo({
-      url: '../admin/admin',
+    this.setData({
+      show:!this.data.show
     })
   },
   // 跳转订单管理页
