@@ -108,10 +108,12 @@ Page({
                   array.push(res.data[i]);
                   that.setData({
                     array:array,
-                    productAll:productAll
                   })
               }
             }
+            that.setData({
+              productAll: productAll
+            })
           }
         })
       }

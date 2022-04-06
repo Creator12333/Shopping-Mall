@@ -38,14 +38,20 @@ Page({
                 that.setData({
                   array:array
                 })
-                wx.hideLoading({
-                  success: (res) => {},
-                })
                 console.log(that.data.array)
               }
             }
+            wx.hideLoading({
+              success: (res) => {},
+            })
+          },
+          fail(err) {
+            console.log(err);
           }
         })
+      },
+      fail(err) {
+        console.log(err);
       }
     })
   },
